@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="contenedorZ">
+        <header>
+            <div class="caja">
+                <img src="img/yo.png" class="imagenDiferenciales">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="proyectos.html">Portafolio</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="index.html">Salir</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form action="enviar.php" method="post">
+                <label for="nombreapellido">Nombre</label>
+                <input type="text" name="nombre" id="nombre" class="input-padron" required>
+
+                <label for="correoelectronico">Correo Electrónico</label>
+                <input type="email" name="email" id="email" class="input-padron" required placeholder="email@dominio.com">
+
+                <label for="telefono">Asunto</label>
+                <input type="text" name="asunto" id="asunto" class="input-padron" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" name="mensaje" id="mensaje" class="input-padron" required></textarea>
+                <input type="submit" value="Enviar formulario"  id="btn" class="enviar">
+
+            </form>
+        </main>
+        <footer>
+
+        </footer>
+        </div>
+    </body>    
+</html>
